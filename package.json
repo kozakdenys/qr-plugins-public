@@ -1,0 +1,47 @@
+{
+  "name": "qr-plugins",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Plugins for qr-code-styling",
+  "author": "Denys Kozak",
+  "workspaces": [
+    "packages/qr-border-plugin"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/kozakdenys/qr-plugins/issues"
+  },
+  "homepage": "https://github.com/kozakdenys/qr-plugins",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozakdenys/qr-plugins.git"
+  },
+  "scripts": {
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "lint": "lerna run lint --stream",
+    "format": "prettier . --write",
+    "prepare": "husky && echo 'npx lint-staged' > .husky/pre-commit && git add .husky/pre-commit",
+    "versionup": "lerna version",
+    "ci:versionup:patch": "lerna version patch --no-push --no-git-tag-version --yes && npm run commit-version",
+    "ci:versionup:minor": "lerna version minor --no-push --no-git-tag-version --yes && npm run commit-version",
+    "ci:versionup:major": "lerna version major --no-push --no-git-tag-version --yes && npm run commit-version",
+    "commit-version": "git add . && git commit -m \"chore(release): v`node -p 'require(\"./lerna.json\").version'`\"",
+    "release": "lerna publish from-package",
+    "ci:release": "lerna publish from-package --yes"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/jest": "^29.5.13",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "jest": "^29.7.0",
+    "lerna": "^8.1.8",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
+  }
+}
