@@ -9,12 +9,12 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/kozakdenys/qr-plugins/issues"
+    "url": "https://github.com/kozakdenys/qr-plugins-public/issues"
   },
-  "homepage": "https://github.com/kozakdenys/qr-plugins",
+  "homepage": "https://github.com/kozakdenys/qr-plugins-public",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kozakdenys/qr-plugins.git"
+    "url": "git+https://github.com/kozakdenys/qr-plugins-public.git"
   },
   "scripts": {
     "build": "lerna run build --stream",

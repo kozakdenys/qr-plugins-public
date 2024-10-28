@@ -13,7 +13,7 @@
     "build"
   ],
   "dependencies": {
-    "@lefe-dev/lefe-verify-license": "^0.0.14"
+    "@lefe-dev/lefe-verify-license": "^0.1.0"
   },
   "devDependencies": {
     "ts-loader": "^9.5.1",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kozakdenys/qr-plugins.git"
+    "url": "git+https://github.com/kozakdenys/qr-plugins-public.git"
   },
   "keywords": [
     "qr",
@@ -41,7 +41,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/kozakdenys/qr-plugins/issues"
+    "url": "https://github.com/kozakdenys/qr-plugins-public/issues"
   },
   "homepage": "https://lefe.dev/marketplace/qr-border-plugin"
 }
