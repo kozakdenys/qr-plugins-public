@@ -1,4 +1,4 @@
-export declare const createRect: () => SVGRectElement;
+import { Options as LibOptions } from "qr-code-styling";
 export declare enum Position {
     top = "top",
     bottom = "bottom",
@@ -27,14 +27,7 @@ export type ExtensionOptions = BorderOption & {
     borderOuter: BorderOption;
 };
 declare const QRBorderPlugin: {
-    (extensionOptions: ExtensionOptions): (svg: SVGElement, options: {
-        width: number;
-        height: number;
-    }) => void;
+    (extensionOptions: ExtensionOptions): (svg: SVGElement, options: LibOptions) => void;
     setKey: (key?: string) => void;
-    verifyKey(element: SVGElement, options: {
-        width: number;
-        height: number;
-    }): void;
 };
 export default QRBorderPlugin;
