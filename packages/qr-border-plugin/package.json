@@ -1,7 +1,7 @@
 {
   "name": "qr-border-plugin",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin for generating different borders of qr-code-styling",
   "author": "Denys Kozak",
   "main": "./build/index.js",
@@ -13,7 +13,7 @@
     "build"
   ],
   "dependencies": {
-    "@lefe-dev/lefe-verify-license": "^0.1.0"
+    "@lefe-dev/lefe-verify-license": "^0.1.1"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
